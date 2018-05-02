@@ -1,0 +1,17 @@
+Sprite Paths: 1
+Sprites/dudesSet1
+
+Dragon:
+0-dudes1_1
+
+Zombie:
+0-dudes1_2
+
+Bowla:
+0-dudes1_3
+
+Skeleton:
+0-dudes1_4
+
+Slime:
+0-dudes1_5
