@@ -464,6 +464,7 @@ public class ProjectLogger : MonoBehaviour {
 		if (theClick != null) {
 			EntryPrefab e = theClick.GetComponent<EntryPrefab>();
 			if (e != null) {
+				Debug.Log("click2");
 				curMenu = menu.Entry;
 				DisplayMonthUI(false);
 				DisplayDayUI(false);
@@ -483,8 +484,8 @@ public class ProjectLogger : MonoBehaviour {
 				for (int i = firstDay; i < System.DateTime.DaysInMonth(curYear, curMonth) + firstDay; i++) {
 					string target = "day (" + i.ToString() + ")";
 					if (theClick.name == target) {
-						clickedDay = i;
-						curDay = i;
+						clickedDay = i - firstDay;
+						curDay = i - firstDay;
 						List<Entry> entriesOfDate = new List<Entry>();
 						List<Entry> entriesOfDay = curProject.getEntries(curYear, curMonth, i - firstDay + 1);
 						for (int j = 0; j < entriesOfDay.Count; j++) {

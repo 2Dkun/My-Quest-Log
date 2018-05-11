@@ -1,5 +1,6 @@
-Sprite Paths: 1
+Sprite Paths: 2
 Sprites/dudesSet1
+Sprites/dudesSet2
 
 Dragon:
 0-dudes1_1
